@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="current-weather-details">
+    <div class="general-info">
+        <div class="first">
+            <h2>Get weather at current location</h2>
+            <button id="get-weather">Get current weather</button>
+        </div>
+        <div class="city-indicators">
+            <h2> or Say city and say lol!</h2>
+            <div class="wrapper">
+                <input type="text" placeholder="Enter city" class="input-city">
+                <div class="wrapper-btns">
+                    <button class="btn-temperature">Find out the weather</button>
+                </div>
+            </div>
+            <p class="error-name"></p>
+            <p>Maybe you meant <span class="possible-name"></span></p>
+        </div>
+    </div>
+    <div class="all-indicators">
+        <p><span id="name-city"></span></p>
+        <p><span>Humidity: </span><span id="humidity">--</span></p>
+        <p><span>Pressure: </span> <span id="pressure">--</span></p>
+        <p><span>Temperature: </span><span id="temperature">--</span></p>
+        <p><span>Wind speed: </span><span id="wind-speed">--</span></p>
+    </div>
+    <p class="preloader"></p>
+</section>
+<script src="js.js"></script>
+<script src="speech.js"></script>
+</body>
+</html>
